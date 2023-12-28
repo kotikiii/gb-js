@@ -67,7 +67,7 @@
       form.addEventListener('submit', (e) =>{
         let toCheck = false;
         formInputs.forEach(element => {
-            if(element.value === ' ' || element.value == null){
+            if(element.value === '' || element.value == null){
                 element.classList.add("error");
                 toCheck = true;
             }
