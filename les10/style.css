@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(36, 133, 36, 0.624);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+.users-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user-content{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+span{
+    font-style: italic;
+    font-weight: 600;
+}
