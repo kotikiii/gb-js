@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -121,7 +122,7 @@ span {
   top: 0;
 }
 
-.menu-open:active .intro-opacity{
+.menu-open:active .intro-opacity {
   background-color: #22222231;
 }
 
@@ -246,28 +247,29 @@ span {
 
 .productCards-item {
   background-color: #f8f8f8;
-  position: relative;
 }
 
 .productCards-img {
   transition: 1s;
 }
-
+.hover{
+  position: relative;
+}
 .hover:hover .img-hover {
-  z-index: 1;
+  display: flex;
 }
 
 .img-hover {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
+  border: none;
   background-size: cover;
   width: 100%;
-  height: 70%;
+  height: 100%;
   background-color: rgba(58, 56, 56, 0.86);
-  z-index: -12;
 }
 
 .hover-buy-btn {
@@ -409,7 +411,7 @@ span {
   display: flex;
   align-items: center;
 }
-input {
+.input-email {
   display: block;
   border-radius: 35px 0 0 35px;
   padding: 15px;
@@ -465,6 +467,93 @@ input {
 svg:hover {
   background-color: #f16d7f;
   fill: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+span,
+button,
+input {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.selected-carts {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.hide{
+  display: none;
+}
+.selectedCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  max-width: 652px;
+  max-height: 309px;
+  position: relative;
+}
+
+.card__data {
+  color: #575757;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card__description {
+  padding: 22px 100px 62px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.card__title {
+  font-size: 24px;
+}
+
+.card__text {
+  color: #575757;
+  display: flex;
+  gap: 7px;
+}
+
+.card__text--red {
+  color: #ef5b70;
+}
+
+.card__text--grey {
+  color: #6f6e6e;
+}
+
+.card__input {
+  width: 44px;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px 0 2px 10px;
+  border: 1px solid #eaeaea;
+  margin-left: 24px;
+}
+
+.card__delete {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 28px;
+  right: 22px;
 }
 
 @media (max-width: 1024px) and (min-width: 734px) {
