@@ -16,7 +16,7 @@ productCardsMatrix.forEach((item) => {
   productCards.insertAdjacentHTML(
     "beforeend",
     `
-    <div class="productCards-item id="${item.id}">
+    <div class="productCards-item" id="${item.id}">
                     <div class="hover">
                         <img src="${item.img}" alt="" class="productCards-img">
                         <div class="img-hover">
